@@ -49,3 +49,15 @@ a {
 .main-navigation a {
   color: inherit;
 }
+
+.slider {
+  background-color: #eeeeee;
+}
+
+.slider-item h3 {
+  color: #000000;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+}
+
