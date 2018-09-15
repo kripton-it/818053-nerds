@@ -434,6 +434,7 @@ img {
 }
 
 .inner-page h1 {
+  text-align: center;
   margin: 0;
   padding: 0;
   color: #000000;
@@ -441,6 +442,15 @@ img {
   font-weight: 500;
   line-height: 55px;
   background-color: #eeeeee;
+}
+
+.inner-page .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter {
+  width: 260px;
 }
 
 .filter-group {
@@ -492,6 +502,14 @@ img {
 .filter-button {
   background-color: #eeeeee;
   color: #000000;
+}
+
+.catalog {
+  width: 760px;
+}
+
+.catalog-header {
+  display: flex;
 }
 
 .catalog-sort {
@@ -568,10 +586,18 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .catalog-item {
+  width: 360px;
+  margin-right: auto;
   border: 1px solid rgba(0, 1, 1, 0.1);
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
 }
 
 .catalog-item:hover {
