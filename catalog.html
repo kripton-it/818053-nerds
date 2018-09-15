@@ -36,11 +36,33 @@
   </header>
 
   <main>
-    <h1>Дизайн-студия Нердс: Магазин готовых шаблонов</h1>
+    <h1><span class="visually-hidden">Дизайн-студия Нердс: </span>Магазин готовых шаблонов</h1>
 
-    <section class="filters">
-      <h2>Фильтр шаблонов</h2>
-      <!-- Здесь будет форма -->
+    <section class="filter">
+      <h2 class="visually-hidden">Фильтр шаблонов</h2>
+      <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="filter-item">
+          <legend>Стоимость:</legend>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="range-scale">
+                <div class="range-bar"></div>
+              </div>
+              <button class="range-marker range-marker-min" type="button">
+                <span class="visually-hidden">Минимальная цена</span>
+              </button>
+              <button class="range-marker range-marker-max" type="button">
+                <span class="visually-hidden">Максимальная цена</span>
+              </button>
+            </div>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">от <input type="text" name="max-price" value="15000"></label>
+            </div>
+          </div>
+        </fieldset>
+        <!-- Другие элементы формы -->
+      </form>
     </section>
 
     <section class="catalog">
