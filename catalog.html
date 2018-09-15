@@ -61,7 +61,49 @@
             </div>
           </div>
         </fieldset>
-        <!-- Другие элементы формы -->
+        <fieldset class="filter-item">
+          <legend>Сетка:</legend>
+          <ul class="filter-list">
+            <li class="filter-item">
+              <input class="visually-hidden" type="radio" name="grid" id="adaptive" checked>
+              <label for="adaptive">Адаптивная</label>
+            </li>
+            <li class="filter-item">
+              <input class="visually-hidden" type="radio" name="grid" id="fixed">
+              <label for="fixed">Фиксированная</label>
+            </li>
+            <li class="filter-item">
+              <input class="visually-hidden" type="radio" name="grid" id="rubber">
+              <label for="rubber">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter-item">
+          <legend>Особенности:</legend>
+          <ul class="filter-list">
+            <li class="filter-item">
+              <input class="visually-hidden" type="checkbox" name="slider" id="slider" checked>
+              <label for="slider">Слайдер</label>
+            </li>
+            <li class="filter-item">
+              <input class="visually-hidden" type="checkbox" name="features-block" id="features-block">
+              <label for="slider">Блок преимуществ</label>
+            </li>
+            <li class="filter-item">
+              <input class="visually-hidden" type="checkbox" name="news" id="news" checked>
+              <label for="slider">Новости</label>
+            </li>
+            <li class="filter-item">
+              <input class="visually-hidden" type="checkbox" name="gallery" id="gallery">
+              <label for="slider">Галерея</label>
+            </li>
+            <li class="filter-item">
+              <input class="visually-hidden" type="checkbox" name="cart" id="cart">
+              <label for="slider">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button filter-button" type="submit">Показать</button>
       </form>
     </section>
 
