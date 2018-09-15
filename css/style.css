@@ -382,11 +382,21 @@ img {
   line-height: 36px;
 }
 
-.modal {
+.modal-feedback {
+  width: 760px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 70px;
+  padding-bottom: 85px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+  background-color: #ffffff;
 }
 
-.modal h2 {
+.modal-feedback h2 {
   margin: 0;
   padding: 0;
   color: #000000;
@@ -395,9 +405,29 @@ img {
   line-height: 45px;
 }
 
+.feedback-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .feedback-form p {
-  margin: 0;
   padding: 0;
+}
+
+.feedback-name {
+  margin: 0;
+  width: 360px;
+  margin-right: auto;
+}
+
+.feedback-email {
+  margin: 0;
+  width: 360px;
+}
+
+.feedback-text {
+  margin: 0;
+  width: 100%;
 }
 
 .feedback-form label {
@@ -669,3 +699,5 @@ img {
 .pagination-item-current a {
   border: 3px solid #dbdbdb;
 }
+
+
