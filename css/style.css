@@ -208,3 +208,46 @@ a {
   font-weight: 700;
   line-height: 36px;
 }
+
+.modal {
+  box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+}
+
+.modal h2 {
+  color: #000000;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.feedback-form label {
+  color: #000000;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  border: 2px solid #d7dcde;
+  background-color: transparent;
+  opacity: 0.5;
+  color: #444444;
+}
+
+.feedback-form input:hover,
+.feedback-form textarea:hover {
+  border: 2px solid #b4b9bb;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border: 2px solid #000000;
+  opacity: 1;
+  outline: none;
+}
+
+.feedback-form input:invalid {
+  border: 2px solid #e74246;
+  color: #e74246;
+  opacity: 1;
+}
