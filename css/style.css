@@ -119,3 +119,38 @@ a {
 .services-item:nth-child(3) .services-button:active {
   background-color: #e5a722;
 }
+
+.about-lead {
+  color: #000000;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.about-list-intro {
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-table-intro {
+  color: #000000;
+  ;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-table th {
+  line-height: 18px;
+}
+
+.about-table td {
+  color: #000000;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.about-table-percent {
+  font-size: 24px;
+}
