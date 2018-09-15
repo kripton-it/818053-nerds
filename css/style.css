@@ -565,11 +565,44 @@ img {
   top: -15px;
 }
 
+.partners {
+  padding-top: 48px;
+  padding-bottom: 36px;
+  position: relative;
+}
+
+.partners::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 20px;
+  right: 20px;
+  height: 2px;
+  background-color: #eeeeee;
+}
+
 .partners-list {
   margin: 0;
   padding: 0;
+  padding-left: 30px;
+  padding-right: 40px;
 
   list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.partners-item:nth-child(1) {
+  padding-top: 7px;
+}
+
+.partners-item:nth-child(3) {
+  margin-right: 25px;
+}
+
+.partners-item:nth-child(4) {
+  padding-top: 7px;
 }
 
 .partners-item a {
