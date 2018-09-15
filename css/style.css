@@ -305,3 +305,59 @@ a {
   background-color: #eeeeee;
   color: #000000;
 }
+
+.catalog-sort {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.sort-item a {
+  opacity: 0.3;
+  color: #000000;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.sort-item a[href]:hover,
+.sort-item a[href]:focus {
+  opacity: 0.6;
+}
+
+.sort-item a[href]:active {
+  opacity: 1;
+}
+
+.sort-item-current a {
+  opacity: 1;
+}
+
+.sort-direction-item a {
+  color: #a6a6a6;
+  opacity: 0.2;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.sort-direction-item-current a {
+  color: #000000;
+  opacity: 1;
+}
+
+.sort-direction-item a[href]:hover,
+.sort-direction-item a[href]:focus {
+  opacity: 1;
+}
+
+.sort-direction-item a[href]:active {
+  opacity: 1;
+  color: #000000;
+}
+
+.sort-direction-link svg {
+  fill: currentColor;
+}
