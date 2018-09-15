@@ -68,11 +68,13 @@ img {
 }
 
 .main-header {
+  padding-top: 50px;
   background-color: #eeeeee;
 }
 
 .main-navigation {
   display: flex;
+  align-items: flex-end;
   text-transform: uppercase;
   color: #000000;
   font-size: 16px;
@@ -123,7 +125,7 @@ img {
 }
 
 .site-navigation {
-  outline: 1px solid green;
+  display: flex;
   width: 600px;
   margin: 0;
   margin-right: auto;
@@ -131,13 +133,56 @@ img {
   list-style: none;
 }
 
+.site-navigation li {
+  margin-right: 47px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.site-navigation-current {
+  position: relative;
+}
+
+.site-navigation-current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  height: 2px;
+  background-color: #fb565a;
+}
+
 .user-navigation {
-  outline: 1px solid green;
-  width: 115px;
+  max-width: 160px;
+  display: flex;
   text-align: right;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.user-cart {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.user-cart-current {
+  position: relative;
+}
+
+.user-cart-current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  height: 2px;
+  background-color: #fb565a;
 }
 
 .slider {
@@ -383,6 +428,7 @@ img {
 }
 
 .modal-feedback {
+  display: none;
   width: 760px;
   padding-left: 100px;
   padding-right: 100px;
