@@ -30,6 +30,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .button {
   font: inherit;
   text-align: center;
@@ -55,17 +60,37 @@ a {
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
+.container {
+  outline: 1px solid red;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .main-header {
   background-color: #eeeeee;
 }
 
 .main-navigation {
+  display: flex;
   text-transform: uppercase;
   color: #000000;
   font-size: 16px;
   font-weight: 500;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+  margin-right: 200px;
+}
+
+.main-header-logo img {
+  display: block;
+  width: 160px;
+  height: 65px;
 }
 
 .main-header-logo[href]:hover,
@@ -98,12 +123,18 @@ a {
 }
 
 .site-navigation {
+  outline: 1px solid green;
+  width: 600px;
   margin: 0;
+  margin-right: auto;
   padding: 0;
   list-style: none;
 }
 
 .user-navigation {
+  outline: 1px solid green;
+  width: 115px;
+  text-align: right;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -141,8 +172,19 @@ a {
 
 .services-list {
   list-style: none;
+  display: flex;
   margin: 0;
   padding: 0;
+}
+
+.services-item {
+  width: 300px;
+  margin-right: 100px;
+  outline: 1px solid green;
+}
+
+.services-item:last-child {
+  margin-right: 0;
 }
 
 .services-item h3 {
@@ -184,6 +226,21 @@ a {
 
 .services-item:nth-child(3) .services-button:active {
   background-color: #e5a722;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-left {
+  width: 660px;
+  outline: 1px solid green;
+}
+
+.about-right {
+  width: 360px;
+  outline: 1px solid green;
 }
 
 .about p {
@@ -251,6 +308,11 @@ a {
   opacity: 0.1;
 }
 
+.contacts-info {
+  width: 320px;
+  outline: 1px solid green;
+}
+
 .contacts-name {
   margin: 0;
   padding: 0;
@@ -269,9 +331,22 @@ a {
   line-height: 18px;
 }
 
+.contacts-map img {
+  display: block;
+  margin: 0 auto;
+}
+
+.main-footer .social {
+  display: flex;
+}
+
 .social-list {
+  width: 260px;
+  outline: 1px solid green;
+  min-height: 40px;
   list-style: none;
   margin: 0;
+  margin-right: 140px;
   padding: 0;
 }
 
@@ -292,6 +367,8 @@ a {
 }
 
 .social-text {
+  width: 560px;
+  outline: 1px solid green;
   margin: 0;
   padding: 0;
   line-height: 22px;
