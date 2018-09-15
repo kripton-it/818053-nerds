@@ -20,6 +20,9 @@ a {
   background-color: #fb565a;
   border: none;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
 }
 
 .button:hover,
@@ -250,4 +253,55 @@ a {
   border: 2px solid #e74246;
   color: #e74246;
   opacity: 1;
+}
+
+.inner-page h1 {
+  color: #000000;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  background-color: #eeeeee;
+}
+
+.filter-group {
+  border: none;
+}
+
+.filter-group legend {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.price-controls label {
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  background-color: #eeeeee;
+  font: inherit;
+  border: none;
+  color: #283136;
+}
+
+.filter-item label {
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.filter-item input:not(:disabled):hover+label {
+  color: #000000;
+}
+
+.filter-item input:disabled+label {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.filter-button {
+  background-color: #eeeeee;
+  color: #000000;
 }
