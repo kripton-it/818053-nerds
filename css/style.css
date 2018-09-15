@@ -154,3 +154,16 @@ a {
 .about-table-percent {
   font-size: 24px;
 }
+
+.partners-item a {
+  opacity: 0.2;
+}
+
+.partners-item a:hover,
+.partners-item a:focus {
+  opacity: 1;
+}
+
+.partners-item a:active {
+  opacity: 0.1;
+}
