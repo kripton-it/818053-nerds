@@ -97,23 +97,67 @@ a {
   color: #000000;
 }
 
+.site-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .slider {
   background-color: #eeeeee;
 }
 
+.slider-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider-controls-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .slider-item h3 {
+  margin: 0;
+  padding: 0;
   color: #000000;
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
 }
 
+.slider-item p {
+  margin: 0;
+  padding: 0;
+}
+
+.services-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .services-item h3 {
+  margin: 0;
+  padding: 0;
   color: #000000;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.services-item p {
+  margin: 0;
+  padding: 0;
 }
 
 .services-item:nth-child(2) .services-button {
@@ -142,6 +186,11 @@ a {
   background-color: #e5a722;
 }
 
+.about p {
+  margin: 0;
+  padding: 0;
+}
+
 .about-lead {
   color: #000000;
   font-size: 45px;
@@ -153,6 +202,12 @@ a {
   color: #000000;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.about-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .about-table-intro {
@@ -177,6 +232,12 @@ a {
   font-size: 24px;
 }
 
+.partners-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .partners-item a {
   opacity: 0.2;
 }
@@ -191,6 +252,8 @@ a {
 }
 
 .contacts-name {
+  margin: 0;
+  padding: 0;
   color: #000000;
   font-size: 18px;
   font-weight: 700;
@@ -200,8 +263,16 @@ a {
 
 .contacts-address,
 .contacts-phone {
+  margin: 0;
+  padding: 0;
   color: #666666;
   line-height: 18px;
+}
+
+.social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .social-link {
@@ -221,10 +292,13 @@ a {
 }
 
 .social-text {
+  margin: 0;
+  padding: 0;
   line-height: 22px;
 }
 
 .social-text b {
+  display: block;
   color: #000000;
   font-size: 36px;
   font-weight: 700;
@@ -236,13 +310,21 @@ a {
 }
 
 .modal h2 {
+  margin: 0;
+  padding: 0;
   color: #000000;
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
 }
 
+.feedback-form p {
+  margin: 0;
+  padding: 0;
+}
+
 .feedback-form label {
+  display: block;
   color: #000000;
   font-weight: 700;
   line-height: 18px;
@@ -275,6 +357,8 @@ a {
 }
 
 .inner-page h1 {
+  margin: 0;
+  padding: 0;
   color: #000000;
   font-size: 55px;
   font-weight: 500;
@@ -284,6 +368,8 @@ a {
 
 .filter-group {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .filter-group legend {
@@ -306,6 +392,12 @@ a {
   color: #283136;
 }
 
+.filter-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .filter-item label {
   line-height: 20px;
   cursor: pointer;
@@ -326,11 +418,19 @@ a {
 }
 
 .catalog-sort {
+  margin: 0;
+  padding: 0;
   color: #000000;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.sort-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .sort-item a {
@@ -352,6 +452,12 @@ a {
 
 .sort-item-current a {
   opacity: 1;
+}
+
+.sort-direction-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .sort-direction-item a {
@@ -381,11 +487,28 @@ a {
   fill: currentColor;
 }
 
+.catalog-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-item {
+  border: 1px solid rgba(0, 1, 1, 0.1);
+}
+
+.catalog-item:hover {
+  box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25);
+  border: 1px solid rgba(77, 77, 77, 0.1);
+}
+
 .catalog-item-info {
   background-color: #eeeeee;
 }
 
 .catalog-item-info h3 {
+  margin: 0;
+  padding: 0;
   color: #000000;
   font-size: 18px;
   font-weight: 700;
@@ -398,17 +521,25 @@ a {
 }
 
 .catalog-description {
+  margin: 0;
+  padding: 0;
   color: #666666;
   line-height: 18px;
 }
 
-.catalog-item {
-  border: 1px solid rgba(0, 1, 1, 0.1);
+.catalog-button {
+  margin: 0;
+  padding: 0;
 }
 
-.catalog-item:hover {
-  box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25);
-  border: 1px solid rgba(77, 77, 77, 0.1);
+.catalog-item img {
+  display: block;
+}
+
+.pagination-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .pagination-item a {
