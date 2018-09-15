@@ -71,7 +71,7 @@ img {
   margin: 0 auto;
   padding: 0 20px;
 
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .main-header {
@@ -333,6 +333,22 @@ img {
   width: 240px;
 }
 
+.services {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.services::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 20px;
+  right: 20px;
+  height: 2px;
+  background-color: #eeeeee;
+}
+
 .services-list {
   display: flex;
   margin: 0;
@@ -343,17 +359,29 @@ img {
 
 .services-item {
   width: 300px;
+  padding-top: 170px;
   margin-right: 100px;
 
-  outline: 1px solid green;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
-.services-item:last-child {
+.services-item:nth-child(1) {
+  background-image: url("../img/bg-services-1.png");
+}
+
+.services-item:nth-child(2) {
+  background-image: url("../img/bg-services-2.png");
+}
+
+.services-item:nth-child(3) {
+  background-image: url("../img/bg-services-3.png");
   margin-right: 0;
 }
 
 .services-item h3 {
   margin: 0;
+  margin-bottom: 18px;
   padding: 0;
 
   font-weight: 700;
@@ -365,7 +393,13 @@ img {
 
 .services-item p {
   margin: 0;
+  margin-right: 20px;
+  margin-bottom: 32px;
   padding: 0;
+}
+
+.services-button {
+  width: 160px;
 }
 
 .services-item:nth-child(2) .services-button {
