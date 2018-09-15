@@ -46,8 +46,33 @@ a {
   text-transform: uppercase;
 }
 
+.main-header-logo[href]:hover,
+.main-header-logo[href]:focus {
+  opacity: 0.8;
+}
+
+.main-header-logo[href]:active {
+  opacity: 0.3;
+}
+
 .main-navigation a {
   color: inherit;
+}
+
+.main-navigation a[href]:hover,
+.main-navigation a[href]:focus {
+  color: #fb565a;
+}
+
+.main-navigation a[href]:active {
+  opacity: 0.3;
+}
+
+.site-navigation-current a,
+.site-navigation-current a:hover,
+.site-navigation-current a:focus,
+.site-navigation-current a:active {
+  color: #000000;
 }
 
 .slider {
