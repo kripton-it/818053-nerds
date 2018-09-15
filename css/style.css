@@ -61,3 +61,36 @@ a {
   line-height: 55px;
 }
 
+.services-item h3 {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.services-item:nth-child(2) .services-button {
+  background-color: #00ca74;
+}
+
+.services-item:nth-child(2) .services-button:hover,
+.services-item:nth-child(2) .services-button:focus {
+  background-color: #00bc6c;
+}
+
+.services-item:nth-child(2) .services-button:active {
+  background-color: #00aa62;
+}
+
+.services-item:nth-child(3) .services-button {
+  background-color: #efc84a;
+}
+
+.services-item:nth-child(3) .services-button:hover,
+.services-item:nth-child(3) .services-button:focus {
+  background-color: #eab534;
+}
+
+.services-item:nth-child(3) .services-button:active {
+  background-color: #e5a722;
+}
