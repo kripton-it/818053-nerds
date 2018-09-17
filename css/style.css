@@ -518,7 +518,7 @@ img {
 
 .about-table-intro {
   margin: 0;
-  margin-bottom: 41px;
+  margin-bottom: 22px;
   padding: 0;
   text-align: center;
 }
@@ -530,25 +530,25 @@ img {
 }
 
 .about-table {
-  border-collapse: collapse;
+  border-spacing: 0 10px;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-table thead {
+  order: 1;
+  width: 100%;
+}
+
+.about-table tbody {
+  width: 100%;
 }
 
 .about-table th {
+  width: 117px;
   line-height: 18px;
   text-align: left;
-  position: absolute;
-  bottom: -48px;
-  width: 105px;
-  left: auto;
-}
-
-.about-table th:nth-child(2) {
-  left: 119px;
-}
-
-.about-table th:nth-child(3) {
-  left: 238px;
 }
 
 .about-table td {
@@ -561,8 +561,7 @@ img {
 
 .about-table-percent {
   font-size: 25px;
-  position: relative;
-  top: -15px;
+  vertical-align: super;
 }
 
 .partners {
