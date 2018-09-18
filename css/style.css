@@ -802,9 +802,11 @@ img {
 
 .modal-close {
   position: absolute;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
-  top: 95px;
-  right: 110px;
+  top: 78px;
+  right: 90px;
   opacity: 0.3;
   border: none;
   font-size: 0;
@@ -815,6 +817,8 @@ img {
 .modal-close::after {
   content: "";
   position: absolute;
+  left: 2px;
+  top: 13px;
   width: 27px;
   height: 5px;
   background-color: #fb565a;
