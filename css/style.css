@@ -796,8 +796,50 @@ img {
   transform: translate(-50%, -50%);
 }
 
+.modal-show {
+  display: block;
+}
+
+.modal-close {
+  position: absolute;
+  cursor: pointer;
+  top: 95px;
+  right: 110px;
+  opacity: 0.3;
+  border: none;
+  font-size: 0;
+  background-color: transparent;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 5px;
+  background-color: #fb565a;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.1;
+}
+
 .modal-feedback h2 {
   margin: 0;
+  margin-bottom: 45px;
   padding: 0;
 
   font-weight: 500;
@@ -819,6 +861,7 @@ img {
   width: 360px;
   margin: 0;
   margin-right: auto;
+  margin-bottom: 35px;
 }
 
 .feedback-email {
@@ -829,10 +872,18 @@ img {
 .feedback-text {
   width: 100%;
   margin: 0;
+  margin-bottom: 47px;
+}
+
+.feedback-form textarea {
+  display: block;
+  min-height: 90px;
+  resize: vertical;
 }
 
 .feedback-form label {
   display: block;
+  margin-bottom: 10px;
 
   font-weight: 700;
   line-height: 18px;
@@ -842,6 +893,9 @@ img {
 .feedback-form input,
 .feedback-form textarea {
   color: #444444;
+  padding: 18px 16px;
+  width: 100%;
+  box-sizing: border-box;
 
   background-color: transparent;
   border: 2px solid #d7dcde;
@@ -865,6 +919,10 @@ img {
 
   border: 2px solid #e74246;
   opacity: 1;
+}
+
+.feedback-button {
+  width: 260px;
 }
 
 .inner-page h1 {
