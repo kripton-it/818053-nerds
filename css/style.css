@@ -432,7 +432,7 @@ img {
   padding-top: 42px;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 75px;
+  padding-bottom: 65px;
   position: relative;
 }
 
@@ -617,14 +617,35 @@ img {
   opacity: 0.1;
 }
 
-.contacts-info {
-  width: 320px;
+.main-footer {
+  padding-top: 85px;
+}
 
-  outline: 1px solid green;
+.contacts {
+  position: relative;
+  overflow: hidden;
+}
+
+.contacts .container {
+  position: relative;
+  background-color: transparent;
+  padding-top: 52px;
+  padding-bottom: 50px;
+}
+
+.contacts-info {
+  width: 220px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  background-color: #ffffff;
 }
 
 .contacts-name {
   margin: 0;
+  margin-bottom: 22px;
   padding: 0;
 
   font-weight: 700;
@@ -643,31 +664,88 @@ img {
   color: #666666;
 }
 
+.contacts-address {
+  margin-right: 10px;
+  margin-bottom: 19px;
+}
+
+.contacts-phone {
+  margin-bottom: 37px;
+}
+
+.contacts-map {
+  position: absolute;
+  width: 1440px;
+  height: 416px;
+  left: 50%;
+  top: auto;
+  transform: translateX(-50%);
+}
+
+.contacts-map::before {
+  content: "";
+  position: absolute;
+  width: 231px;
+  height: 190px;
+  background-image: url("../img/map-marker.png");
+  background-repeat: no-repeat;
+  left: 57%;
+  top: 85px;
+}
+
 .contacts-map img {
   display: block;
-  margin: 0 auto;
+  height: 416px;
+  width: 1440px;
 }
 
 .main-footer .social {
   display: flex;
+  align-items: center;
+  padding-top: 69px;
+  padding-bottom: 69px;
 }
 
 .social-list {
   width: 260px;
-  min-height: 40px;
   margin: 0;
   margin-right: 140px;
   padding: 0;
+  display: flex;
 
   list-style: none;
+}
 
-  outline: 1px solid green;
+.social-item {
+  margin-right: 10px;
+}
+
+.social-item:last-child {
+  margin-right: 0;
 }
 
 .social-link {
   color: #ffffff;
+  display: block;
+  width: 79px;
+  height: 79px;
+  border-radius: 50%;
 
   background-color: #e1e1e1;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-link-fb {
+  background-image: url("../img/icon-fb.svg");
+}
+
+.social-link-vk {
+  background-image: url("../img/icon-vk.svg");
+}
+
+.social-link-inst {
+  background-image: url("../img/icon-inst.svg");
 }
 
 .social-link:hover,
@@ -685,15 +763,15 @@ img {
 .social-text {
   width: 560px;
   margin: 0;
+  margin-top: 5px;
   padding: 0;
 
   line-height: 22px;
-
-  outline: 1px solid green;
 }
 
 .social-text b {
   display: block;
+  margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 36px;
