@@ -39,13 +39,15 @@
   </header>
 
   <main class="inner-page">
-    <h1><span class="visually-hidden">Дизайн-студия Нердс: </span>Магазин готовых шаблонов</h1>
+    <div class="inner-page-title">
+      <h1><span class="visually-hidden">Дизайн-студия Нердс: </span>Магазин готовых шаблонов</h1>
+    </div>
 
     <div class="container">
       <section class="filter">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="filter-group">
+          <fieldset class="filter-group filter-group-price">
             <legend>Стоимость:</legend>
             <div class="range-filter">
               <div class="range-controls">
@@ -65,7 +67,7 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="filter-group">
+          <fieldset class="filter-group filter-group-grid">
             <legend>Сетка:</legend>
             <ul class="filter-list">
               <li class="filter-item">
@@ -82,7 +84,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter-group">
+          <fieldset class="filter-group filter-group-features">
             <legend>Особенности:</legend>
             <ul class="filter-list">
               <li class="filter-item">
@@ -91,19 +93,19 @@
               </li>
               <li class="filter-item">
                 <input class="visually-hidden" type="checkbox" name="features-block" id="features-block">
-                <label for="slider">Блок преимуществ</label>
+                <label for="features-block">Блок преимуществ</label>
               </li>
               <li class="filter-item">
                 <input class="visually-hidden" type="checkbox" name="news" id="news" checked>
-                <label for="slider">Новости</label>
+                <label for="news">Новости</label>
               </li>
               <li class="filter-item">
                 <input class="visually-hidden" type="checkbox" name="gallery" id="gallery">
-                <label for="slider">Галерея</label>
+                <label for="gallery">Галерея</label>
               </li>
               <li class="filter-item">
                 <input class="visually-hidden" type="checkbox" name="cart" id="cart">
-                <label for="slider">Корзина</label>
+                <label for="cart">Корзина</label>
               </li>
             </ul>
           </fieldset>

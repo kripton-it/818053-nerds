@@ -71,7 +71,7 @@ img {
   margin: 0 auto;
   padding: 0 20px;
 
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 .main-header {
@@ -929,22 +929,28 @@ img {
   width: 260px;
 }
 
+.inner-page-title {
+  background-color: #eeeeee;
+}
+
 .inner-page h1 {
-  margin: 0;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 0;
+  padding-top: 78px;
+  padding-bottom: 107px;
 
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   text-align: center;
   color: #000000;
-
-  background-color: #eeeeee;
 }
 
 .inner-page .container {
   display: flex;
   justify-content: space-between;
+  padding-top: 55px;
 }
 
 .filter {
@@ -958,6 +964,18 @@ img {
   border: none;
 }
 
+.filter-group-price {
+  margin-bottom: 54px;
+}
+
+.filter-group-grid {
+  margin-bottom: 44px;
+}
+
+.filter-group-features {
+  margin-bottom: 45px;
+}
+
 .filter-group legend {
   font-weight: 700;
   font-size: 18px;
@@ -966,17 +984,90 @@ img {
   text-transform: uppercase;
 }
 
+.filter-group-price legend {
+  margin-bottom: 49px;
+}
+
+.filter-group-grid legend,
+.filter-group-features legend {
+  margin-bottom: 14px;
+}
+
+.range-filter {
+  width: 100%;
+}
+
+.range-controls {
+  position: relative;
+  height: 2px;
+  padding-top: 39px;
+  padding-bottom: 39px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #eeeeee;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.range-scale {
+  height: 2px;
+  background-color: #d7dcde;
+}
+
+.range-bar {
+  width: 70%;
+  height: 2px;
+  background-color: #00ca74;
+}
+
+.range-marker {
+  position: absolute;
+  cursor: pointer;
+  top: 31px;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 23px;
+  background-color: transparent;
+  background-image: url("../img/filter-button.svg");
+  border: none;
+}
+
+.range-marker-min {
+  left: 18px;
+}
+
+.range-marker-max {
+  left: 160px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
 .price-controls label {
+  font-size: 16px;
+  width: 50%;
+  display: inline-block;
   line-height: 22px;
   text-transform: uppercase;
 }
 
+.max-price {
+  text-align: right;
+}
+
 .price-controls input {
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
+  text-align: center;
   font: inherit;
   color: #283136;
 
   background-color: #eeeeee;
   border: none;
+  border-radius: 5px;
 }
 
 .filter-list {
@@ -986,13 +1077,56 @@ img {
   list-style: none;
 }
 
+.filter-item {
+  margin-bottom: 16px;
+}
+
+.filter-item:last-child {
+  margin-bottom: 0;
+}
+
 .filter-item label {
+  position: relative;
   line-height: 20px;
+  padding-left: 36px;
 
   cursor: pointer;
 }
 
-.filter-item input:not(:disabled):hover + label {
+.filter-item input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  background-color: transparent;
+  border: 4px solid #4d4d4d;
+  opacity: 0.4;
+  left: 0;
+  top: auto;
+  border-radius: 50%;
+}
+
+.filter-item input[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background-color: #4d4d4d;
+  opacity: 0.4;
+  border-radius: 50%;
+  left: 8px;
+  top: 5.5px;
+}
+
+.filter-item input[type="radio"] + label:hover::before,
+.filter-item input[type="radio"]:focus + label::before,
+.filter-item input[type="radio"] + label:hover::after,
+.filter-item input[type="radio"]:focus + label::after {
+  opacity: 1;
+}
+
+.filter-item input[type="radio"]:not(:disabled) + label:hover,
+.filter-item input[type="radio"]:not(:disabled):focus + label {
   color: #000000;
 }
 
@@ -1001,8 +1135,37 @@ img {
   opacity: 0.3;
 }
 
+.filter-item input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  opacity: 0.4;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-item input[type="checkbox"]:checked + label::before {
+  width: 27px;
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.filter-item input[type="checkbox"] + label:hover::before,
+.filter-item input[type="checkbox"]:focus + label::before {
+  opacity: 1;
+}
+
+.filter-item input[type="radio"]:disabled + label::before,
+.filter-item input[type="radio"]:disabled + label::after,
+.filter-item input[type="checkbox"]:disabled + label::before {
+  opacity: 0.25;
+}
+
 .filter-button {
   color: #000000;
+  width: 100%;
 
   background-color: #eeeeee;
 }
