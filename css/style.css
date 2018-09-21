@@ -639,24 +639,18 @@ img {
 
 .main-footer {
   padding-top: 60px;
+  position: relative;
 }
 
 .contacts {
-  position: relative;
-
-  overflow: hidden;
-}
-
-.contacts .container {
-  position: relative;
-
-  padding-top: 52px;
-  padding-bottom: 50px;
+  height: 416px;
 
   background-color: transparent;
 }
 
 .contacts-info {
+  position: absolute;
+  top: 112px;
   width: 220px;
   padding-top: 50px;
   padding-right: 50px;
@@ -698,10 +692,7 @@ img {
 
 .contacts-map {
   position: absolute;
-  top: auto;
-  /* left: 50%; */
 
-  /* width: 1440px; */
   left: 0;
   right: 0;
   height: 416px;
@@ -739,7 +730,7 @@ img {
 .main-footer .social {
   display: flex;
   align-items: center;
-  padding-top: 69px;
+  padding-top: 65px;
   padding-bottom: 69px;
 }
 
