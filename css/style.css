@@ -583,9 +583,9 @@ img {
 .partners {
   position: relative;
 
+  margin-bottom: 25px;
   padding-top: 48px;
   padding-bottom: 36px;
-  margin-bottom: 25px;
 }
 
 .partners::after {
@@ -638,8 +638,9 @@ img {
 }
 
 .main-footer {
-  padding-top: 60px;
   position: relative;
+
+  padding-top: 60px;
 }
 
 .contacts {
@@ -651,6 +652,7 @@ img {
 .contacts-info {
   position: absolute;
   top: 112px;
+
   width: 220px;
   padding-top: 50px;
   padding-right: 50px;
@@ -692,9 +694,9 @@ img {
 
 .contacts-map {
   position: absolute;
-
-  left: 0;
   right: 0;
+  left: 0;
+
   height: 416px;
 
   /* transform: translateX(-50%); */
@@ -715,11 +717,13 @@ img {
 
 .contacts-map img {
   position: absolute;
+  left: 50%;
   z-index: -1;
+
   display: block;
   width: 1440px;
   height: 416px;
-  left: 50%;
+
   transform: translateX(-50%);
 }
 
@@ -826,8 +830,15 @@ img {
 }
 
 .modal-show {
-  display: block;
   z-index: 15;
+
+  display: block;
+
+  animation: bounce 1s;
+}
+
+.modal-error {
+  animation: shake 1s;
 }
 
 .modal-close {
@@ -1521,15 +1532,49 @@ img {
 
 .overlay {
   position: fixed;
-  left: 0;
-  right: 0;
   top: 0;
+  right: 0;
   bottom: 0;
+  left: 0;
   z-index: 10;
+
   display: none;
+
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 .overlay-show {
   display: block;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(-50%, -50%) scale(1.05);
+  }
 }
