@@ -220,7 +220,7 @@ img {
   position: absolute;
   bottom: 88px;
   left: 50%;
-  z-index: 100;
+  z-index: 10;
 
   display: flex;
   margin: 0;
@@ -827,6 +827,7 @@ img {
 
 .modal-show {
   display: block;
+  z-index: 15;
 }
 
 .modal-close {
@@ -1516,4 +1517,19 @@ img {
   width: 260px;
 
   text-transform: uppercase;
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.overlay-show {
+  display: block;
 }
